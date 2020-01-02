@@ -14,7 +14,7 @@ So that I can organize my thoughts and keep track of tasks I need to complete.
 
 ![image](https://user-images.githubusercontent.com/48987979/71690698-5b1d8c80-2d9d-11ea-8134-b4d15dc43e28.png)
 
-http://localhost:3000/
+[# Live Preview](http://localhost:3000/)
 
 # Stack Used: 
 Html, Css, Express.js
