@@ -15,13 +15,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
-// USE
-
-app.use("/assets/css", express.static(path.join(__dirname,"./public/assets/css")));
-
-app.use("/assets/js", express.static(path.join(__dirname,"./public/assets/js")));
-
-app.use(express.static(path.join(__dirname, "./public")));
 
 
 //GET
