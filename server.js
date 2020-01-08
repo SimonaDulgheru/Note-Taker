@@ -16,15 +16,8 @@ app.use(express.urlencoded({ extended: true }));
 
 
 
-
-//GET
-
 app.get("/notes", function(req, res) {
     res.sendFile(path.join(__dirname, "./public/notes.html" ));
-})
-
-app.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "./public/index.html" ));
 })
 
 app.get("/api/notes", function(req, res) {
@@ -34,7 +27,11 @@ app.get("/api/notes", function(req, res) {
     });
   });
 
-  // USE
+  app.get("*", function(req, res) {
+    res.sendFile(path.join(__dirname, "./public/index.html" ));
+})
+
+ 
 
 app.use("/assets/css", express.static(path.join(__dirname,"./public/assets/css")));
 
@@ -43,10 +40,8 @@ app.use("/assets/js", express.static(path.join(__dirname,"./public/assets/js")))
 app.use(express.static(path.join(__dirname, "./public")));
 
 
-//POST
-
 app.post("/api/notes", function(req,res) {
-    note = {
+    const note = {
         id:uuid.v4(),
         title:req.body.title,
         text:req.body.text
@@ -60,7 +55,7 @@ app.post("/api/notes", function(req,res) {
             if (err) throw err;
         });
     });
-    res.sendFile(db);
+    res.sendFile(note);
 });
 
 

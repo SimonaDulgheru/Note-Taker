@@ -14,6 +14,11 @@ So that I can organize my thoughts and keep track of tasks I need to complete.
 
 ![image](https://user-images.githubusercontent.com/48987979/71690698-5b1d8c80-2d9d-11ea-8134-b4d15dc43e28.png)
 
+
+# Deployment
+
+The application is currently hosted on heroku, see Live Preview
+
 ## [Live Preview](https://frozen-cove-51764.herokuapp.com/notes)
 
 Stack Used: 
