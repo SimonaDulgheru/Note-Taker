@@ -19,7 +19,7 @@ So that I can organize my thoughts and keep track of tasks I need to complete.
 
 The application is currently hosted on heroku, see Live Preview
 
-## [Live Preview](https://frozen-cove-51764.herokuapp.com/notes)
+## [Live Preview](https://frozen-cove-51764.herokuapp.com)
 
 Stack Used: 
 
